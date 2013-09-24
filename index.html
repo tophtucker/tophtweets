@@ -36,8 +36,19 @@ var tweets = new Array(
 	
 	// ok, pick up where you left off one day and keep curating:
 	// file://localhost/Users/tophtucker/Dropbox/Archives/tweets/index.html#
+		
+	'181191415148191744', // Practice makes better
 	
-	'181191415148191744' // Practice makes better
+	'186581115753074688', // Apr 1 12: Island of misfit toys
+	'186581956404842496', // cont.
+	'186583662828060672',
+	'186584736444063744',
+	'186585214267572224',
+	'186585834584150016',
+	
+	'186708960777216000', // Apr 1 12: anthropic doomsday principle
+	'186713150568153089' // Apr 1 12: go home and hug your children mode
+	
 	);
 	
 var randTweet = tweets[Math.floor(Math.random() * tweets.length)];
@@ -45,25 +56,24 @@ var randTweetURL = "https://twitter.com/tophtucker/status/"+randTweet;
 
 	
 </script>
+
+<style>
+#tweet-container {
+	width: 500px;
+	margin: 250px auto;
+}
+</style>
+
 </head>
 
 <body>
 
-<!-- tophtweets -->
-<blockquote class="twitter-tweet"><p>Practice makes better.</p>&mdash; Toph Tucker (@tophtucker) <a id="tweetURL" href="https://twitter.com/tophtucker/status/31555931">March 18, 2012</a></blockquote>
-<script>document.getElementById("tweetURL").setAttribute("href",randTweetURL);</script>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<hr>
-
-<!-- the best -->
-<a class="twitter-timeline" href="https://twitter.com/tophtucker/the-best" data-widget-id="313491799278755842">Tweets from @tophtucker/the-best</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-<!-- favorites -->
-<a class="twitter-timeline" href="https://twitter.com/tophtucker/favorites" data-widget-id="313492102682124288">Favorite Tweets by @tophtucker</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div id="tweet-container">
+	<!-- tophtweets -->
+	<blockquote class="twitter-tweet"><p>Practice makes better.</p>&mdash; Toph Tucker (@tophtucker) <a id="tweetURL" href="https://twitter.com/tophtucker/status/31555931">March 18, 2012</a></blockquote>
+	<script>document.getElementById("tweetURL").setAttribute("href",randTweetURL);</script>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 <body>
 </html>
